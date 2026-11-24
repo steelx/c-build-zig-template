@@ -1,0 +1,5 @@
+/.zig-cache/
+/zig-out/
+/.cache/
+/outputs/
+.DS_Store

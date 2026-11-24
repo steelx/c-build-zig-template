@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug c-build-zig",
+      "type": "codelldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/zig-out/bin/c-build-zig",
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": true,
+      "windows": {
+        "program": "${workspaceFolder}/zig-out/bin/c-build-zig.exe"
+      }
+    }
+  ]
+}
