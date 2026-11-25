@@ -6,9 +6,34 @@ A C17 starter with Zig 0.17.1. Use `src/main.c` as the entry point. The build li
 
 On GitHub, select **Use this template**, then **Create a new repository**. Clone the new repository. To change the executable name, update `b.addExecutable` in `build.zig` and the paths in `.vscode/launch.json`.
 
+## Install Zig
+
+This template uses Zig **0.17.1**. If `zig version` already prints `0.17.1`, go to [Build, run, and test](#build-run-and-test).
+
+### macOS with Homebrew
+
+```sh
+brew install zig
+zig version
+```
+
+Homebrew installs the current stable release. If the version is different, use the direct download below. [Homebrew Zig formula](https://formulae.brew.sh/formula/zig)
+
+### Direct download for macOS, Linux, or Windows
+
+1. Download the **0.17.1** archive for your operating system and CPU. Choose `aarch64` for Apple Silicon or ARM64 and `x86_64` for 64-bit Intel or AMD. [Official Zig downloads](https://ziglang.org/download/)
+2. Extract the full archive to a folder you want to keep. The folder must contain `zig` or `zig.exe` and the `lib` directory.
+3. Add that folder to your `PATH`. On macOS or Linux, add the line below to `~/.zshrc` or `~/.bashrc` and replace the example path. On Windows, add the folder to your user **Path** in **Environment Variables**.
+
+   ```sh
+   export PATH="/path/to/extracted/zig-folder:$PATH"
+   ```
+
+4. Open a new terminal and run `zig version`. It should print `0.17.1`. [Zig installation guide](https://ziglang.org/learn/getting-started/)
+
 ## Build, run, and test
 
-Put Zig 0.17.1 on your PATH. Run these commands from the project root.
+Run these commands from the project root.
 
 ```sh
 zig version
