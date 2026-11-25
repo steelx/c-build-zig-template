@@ -49,7 +49,8 @@ pub fn build(b: *std.Build) void {
     app.linkLibrary(cjson);
 
     // Link an installed library here, for example:
-    // app.linkSystemLibrary("z", .{});
+    // app.linkSystemLibrary("sdl3", .{ .use_pkg_config = .force });
+    // app.linkSystemLibrary("sdl3-image", .{ .use_pkg_config = .force });
     // If it uses pkg-config, use its package name and .{ .use_pkg_config = .force }.
     // For a library in a custom directory, add its path with app.addLibraryPath.
 
